@@ -1,0 +1,43 @@
+body {
+	font-family: sans-serif;
+	display: inline-block;
+}
+
+.form {
+	border: solid 1px rgb(0, 0, 0);
+	padding: 0px 30px 10px 5px;
+	border-radius: 5px;
+}
+
+.form-title {
+	display: inline-block;
+	margin: 10px 0px;
+	padding-left: 15px;
+}
+
+fieldset {
+	border: none;
+}
+
+.input {
+	border: solid 1px rgb(0, 0, 0);
+	padding: 0 15px;
+	border-radius: 5px;
+}
+
+.textarea {
+	border: solid 1px rgb(0, 0, 0);
+	resize: vertical;
+	max-height: 200px;
+	padding: 0 18px;
+	border-radius: 5px;
+}
+
+.checkbox {
+	font-size: 12px;
+}
+
+.button {
+	cursor: pointer;
+	margin-left: 15px;
+}

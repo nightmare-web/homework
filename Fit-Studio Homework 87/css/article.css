@@ -1,0 +1,87 @@
+.article-fit-studio {
+	padding-top: 80px;
+	padding-bottom: 120px;
+}
+
+.text-fit-studio {
+	margin-bottom: 20px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 130%;
+	color: #535755;
+}
+
+.fit-studio-mb-1 {
+	margin-bottom: 80px;
+}
+
+.fit-studio-mb-2 {
+	margin-bottom: 40px;
+}
+
+.article-decor-wrapper {
+	position: relative;
+}
+
+.article-decor-wrapper::before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	background: url(../images/decor-icon.svg) no-repeat;
+	width: 528px;
+	height: 48px;
+}
+
+.article-decor-wrapper-1::before {
+	top: 100px;
+	left: -350px;
+}
+
+.article-decor-wrapper-2::before {
+	right: -350px;
+	bottom: 136px;
+}
+
+.gym-img {
+	width: 100%;
+}
+
+.article-item {
+	margin-top: 0;
+	padding-left: 16px;
+}
+
+.item {
+	margin-bottom: 12px;
+}
+
+.item::marker {
+	font-size: 22px;
+	color: #3596ed;
+}
+
+.article-play-button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 60px;
+	height: 60px;
+	padding: 0;
+	background-color: #3596ed;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: background-color 0.2s;
+}
+
+.article-play-button:hover {
+	background-color: #4eacff;
+}
+
+.article-play-button:not(:disabled):active {
+	background-color: #2b7ec6;
+}

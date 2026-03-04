@@ -1,0 +1,86 @@
+.header {
+	background-color: var(--fourth-color);
+}
+
+.header__container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 40px;
+	padding-block: 24px;
+}
+
+.header__logo {
+	font-family: var(--third-family);
+	font-weight: 700;
+	font-size: 32px;
+	color: var(--main-color);
+}
+
+.menu__list {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	gap: 24px;
+}
+
+.menu__link {
+	display: flex;
+	flex-wrap: nowrap;
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 16px;
+	color: var(--main-color);
+}
+
+.menu__link--with-arrow {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+}
+
+.menu__arrow {
+	flex: 0 0 auto;
+}
+
+.header__search-form {
+	align-self: center;
+	margin: 0;
+}
+
+.search {
+	width: 462px;
+	height: 48px;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 12px 16px;
+	border-radius: 62px;
+	background-color: #f0f0f0;
+}
+
+.search__input {
+	width: 100%;
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 16px;
+	color: var(--third-color);
+	border: 0;
+	outline: 0;
+	background: transparent;
+}
+
+.header__actions {
+	display: flex;
+	gap: 14px;
+}
+
+.header__logo:hover,
+.menu__link:hover,
+.actions__cart-button:hover,
+.actions__account-button:hover {
+	opacity: var(--opacity-time);
+	transition:
+		opacity var(--transition-time),
+		transform var(--transition-time);
+}

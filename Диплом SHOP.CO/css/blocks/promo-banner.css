@@ -1,0 +1,75 @@
+.promo-banner {
+	background-color: var(--main-color);
+}
+
+.promo-banner__header {
+	height: 38px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	max-height: 38px;
+	opacity: 1;
+	overflow: hidden;
+	transition:
+		max-height var(--transition-time),
+		opacity var(--transition-time);
+}
+
+.promo-banner__text,
+.promo-banner__link {
+	color: var(--fourth-color);
+	font-size: 14px;
+}
+
+.promo-banner__text {
+	text-align: center;
+}
+
+.promo-banner__link {
+	text-decoration: underline;
+	text-decoration-skip-ink: none;
+}
+
+.promo-banner__link:hover,
+.promo-banner__button:hover {
+	opacity: var(--opacity-time);
+	transition:
+		opacity var(--transition-time),
+		transform var(--transition-time);
+}
+
+.promo-banner__button {
+	display: flex;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.promo-banner--hidden .promo-banner__header {
+	max-height: 0;
+	opacity: 0;
+}
+
+/* Адаптация */
+@media (width <= 576px) {
+	.promo-banner__link {
+		font-size: 12px;
+	}
+}
+
+@media (width <= 768px) {
+	.promo-banner__text {
+		text-align: center;
+		width: 100%;
+	}
+
+	.promo-banner__discount {
+		display: none;
+	}
+
+	.promo-banner__link {
+		display: inline-block;
+	}
+}

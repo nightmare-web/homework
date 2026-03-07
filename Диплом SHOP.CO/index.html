@@ -1,0 +1,206 @@
+<!doctype html>
+<html class="page" lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/index.css" />
+		<link
+			rel="shortcut icon"
+			href="./icons/clothes-favicon-32x32.ico"
+			type="image/x-icon"
+		/>
+		<script defer src="./js/promo-banner.js" type="module"></script>
+		<script defer src="./js/burger.js" type="module"></script>
+		<title>SHOP.CO</title>
+	</head>
+	<body class="page__body">
+		<div class="promo-banner">
+			<div class="promo-banner__header container">
+				<p class="promo-banner__text">
+					<span class="promo-banner__discount"
+						>Зарегистрируйтесь и получите скидку 20% на первую покупку.
+					</span>
+					<a class="promo-banner__link text-medium" href="#"
+						>Зарегистрироваться сейчас</a
+					>
+				</p>
+				<button
+					class="promo-banner__button"
+					type="button"
+					title="Закрыть"
+					aria-label="Закрыть"
+				>
+					<svg width="20" height="20">
+						<use
+							class="promo-banner__icon"
+							href="./icons/sprite.svg#promo-banner-cross"
+						></use>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<header class="header">
+			<div class="header__container container">
+				<button
+					class="header__burger burger"
+					aria-label="Открыть меню"
+					aria-expanded="false"
+					aria-controls="header__menu"
+				>
+					<svg width="24" height="24">
+						<use
+							class="burger__icon-menu"
+							href="./icons/sprite.svg#burger-menu"
+						></use>
+						<use
+							class="burger__icon-cross"
+							href="./icons/sprite.svg#burger-cross"
+						></use>
+					</svg>
+				</button>
+				<a class="header__logo" href="#">
+					<svg class="header__logo-icon" width="160" height="22">
+						<use href="./icons/shop-co.svg"></use>
+					</svg>
+				</a>
+				<nav
+					class="header__menu menu"
+					id="header__menu"
+					aria-label="Главное меню"
+				>
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a class="menu__link menu__link--with-arrow" href="#"
+								>Магазин
+								<svg
+									class="menu__arrow"
+									width="16"
+									height="16"
+									aria-hidden="true"
+								>
+									<use href="./icons/sprite.svg#header-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Скидки</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#new arrivals">Новые поступления</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#brands">Бренды</a>
+						</li>
+					</ul>
+				</nav>
+				<search class="header__search" aria-label="Поиск">
+					<form class="header__search-form">
+						<div class="search">
+							<svg
+								class="search__icon"
+								width="24"
+								height="24"
+								aria-hidden="true"
+							>
+								<use href="./icons/sprite.svg#header-search"></use>
+							</svg>
+							<input
+								class="search__input"
+								id="header-search"
+								name="search"
+								type="search"
+								placeholder="Искать товары..."
+								aria-label="Поиск по товарам"
+							/>
+						</div>
+					</form>
+				</search>
+				<div class="header__actions actions">
+					<button
+						class="actions__search-button"
+						type="button"
+						aria-label="Поиск"
+						title="Поиск"
+					>
+						<svg width="24" height="24" aria-hidden="true">
+							<use href="./icons/sprite.svg#header-search"></use>
+						</svg>
+					</button>
+					<button
+						class="actions__cart-button"
+						aria-label="Корзина"
+						title="Корзина"
+					>
+						<svg width="24" height="24">
+							<use
+								class="actions__cart-icon"
+								href="./icons/sprite.svg#header-cart"
+							></use>
+						</svg>
+					</button>
+					<button
+						class="actions__account-button"
+						aria-label="Личный кабинет"
+						title="Личный кабинет"
+					>
+						<svg width="24" height="24">
+							<use
+								class="actions__account-icon"
+								href="./icons/sprite.svg#header-account"
+							></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="hero">
+				<div class="hero__container container">
+					<div class="hero__content">
+						<h1 class="hero__content-title text-black">
+							НАЙДИ ОДЕЖДУ КОТОРАЯ ВЫРАЗИТ ТВОЙ СТИЛЬ
+						</h1>
+						<p class="hero__content-text">
+							Просмотрите наш набор тщательно сделанной одежды, созданный чтобы
+							подчеркнуть ваш индивидуальный стиль.
+						</p>
+						<a class="hero__button-link" href="#"
+							><span class="hero__button-buy text-medium"
+								>Купить сейчас</span
+							></a
+						>
+						<ul class="hero__list">
+							<li class="hero__item">
+								<strong class="hero__number text-bold">200+</strong>
+								<span class="hero__label">Всемирных брендов</span>
+							</li>
+							<li class="hero__item">
+								<strong class="hero__number text-bold">2,000+</strong>
+								<span class="hero__label">Качественных товаров</span>
+							</li>
+							<li class="hero__item">
+								<strong class="hero__number text-bold">30,000+</strong>
+								<span class="hero__label">Счастливых клиентов</span>
+							</li>
+						</ul>
+					</div>
+					<div class="hero__decor" aria-hidden="true">
+						<svg class="hero__sparkle-s" width="56" height="56">
+							<use href="./icons/sparkle-s.svg"></use>
+						</svg>
+						<svg class="hero__sparkle-m" width="104" height="104">
+							<use href="./icons/sparkle-m.svg"></use>
+						</svg>
+					</div>
+				</div>
+				<img
+					class="hero__models"
+					src="./images/hero-fashion-models.png"
+					alt="Модели в одежде SHOP.CO"
+					width="1440"
+					height="663"
+				/>
+			</section>
+		</main>
+	</body>
+</html>

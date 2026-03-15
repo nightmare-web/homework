@@ -1,0 +1,197 @@
+.styles__container {
+	max-width: 1240px;
+	border-radius: 40px;
+	padding: 0 64px;
+	background: var(--bg-color);
+}
+
+.styles__title {
+	font-family: var(--second-family);
+	font-size: 48px;
+	text-align: center;
+	padding-block: 70px 64px;
+}
+
+.styles__grid {
+	display: -ms-grid;
+	display: grid;
+	row-gap: 20px;
+	padding-bottom: 76px;
+}
+
+.styles__row {
+	display: -ms-grid;
+	display: grid;
+	-webkit-column-gap: 20px;
+	-moz-column-gap: 20px;
+	column-gap: 20px;
+}
+
+.styles__row--top {
+	-ms-grid-columns: 1fr 1.6fr;
+	grid-template-columns: 1fr 1.6fr;
+}
+
+.styles__row--bottom {
+	-ms-grid-columns: 1.6fr 1fr;
+	grid-template-columns: 1.6fr 1fr;
+}
+
+.style-card {
+	position: relative;
+	display: block;
+	height: 289px;
+	border-radius: 20px;
+	overflow: hidden;
+	text-decoration: none;
+	color: var(--main-color);
+	background-size: cover;
+	background-position: center;
+	-webkit-transition: var(--transition-time);
+	-o-transition: var(--transition-time);
+	transition: var(--transition-time);
+}
+
+@media (any-hover: hover) {
+	.style-card:hover {
+		-webkit-transform: var(--transform-offset-2);
+		-ms-transform: var(--transform-offset-2);
+		transform: var(--transform-offset-2);
+		-webkit-box-shadow: var(--box-shadow);
+		box-shadow: var(--box-shadow);
+	}
+}
+
+.style-card__title {
+	position: absolute;
+	top: 25px;
+	left: 36px;
+	font-size: 36px;
+}
+
+.style-card--casual {
+	-ms-grid-column: 1;
+	grid-column: 1;
+	-ms-grid-row: 1;
+	grid-row: 1;
+	background-image: url("../../images/styles-img/casual.jpg");
+}
+
+.style-card--formal {
+	-ms-grid-column: 2;
+	grid-column: 2;
+	-ms-grid-row: 1;
+	grid-row: 1;
+	background-image: url("../../images/styles-img/formal.jpg");
+}
+
+.style-card--evening {
+	-ms-grid-column: 1;
+	grid-column: 1;
+	-ms-grid-row: 2;
+	grid-row: 2;
+	background-image: url("../../images/styles-img/evening.jpg");
+}
+
+.style-card--sport {
+	-ms-grid-column: 2;
+	grid-column: 2;
+	-ms-grid-row: 2;
+	grid-row: 2;
+	background-image: url("../../images/styles-img/sport.jpg");
+}
+
+/* ADAPTATION */
+@media (width <= 1300px) {
+	/* min-width 375px, max-width 1300px */
+	.styles__row--top {
+		-ms-grid-columns: 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
+	}
+	.styles__row--bottom {
+		-ms-grid-columns: 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
+	}
+	.style-card {
+		height: clamp(190px, 9.367rem + 10.7vw, 289px);
+	}
+}
+
+@media (width <= 1200px) {
+	/* min-width 375px, max-width 1200px */
+	.style-card__title {
+		font-size: clamp(24px, 1.159rem + 1.45vw, 36px);
+		top: clamp(16px, 0.744rem + 1.09vw, 25px);
+		left: clamp(24px, 1.159rem + 1.45vw, 36px);
+	}
+}
+
+@media (width <= 1050px) {
+	/* min-width 375px, max-width 1050px */
+	.styles__container {
+		max-width: 700px;
+		padding: 0 24px;
+	}
+
+	.styles__grid {
+		padding-bottom: clamp(27px, -0.014rem + 7.26vw, 76px);
+	}
+
+	.styles__row--top,
+	.styles__row--bottom {
+		-ms-grid-columns: 1fr;
+		grid-template-columns: 1fr;
+		-webkit-column-gap: 0;
+		-moz-column-gap: 0;
+		column-gap: 0;
+		justify-items: center;
+	}
+
+	.styles__row {
+		-ms-grid-columns: 1fr;
+		grid-template-columns: 1fr;
+		row-gap: clamp(16px, 0.861rem + 0.59vw, 20px);
+	}
+
+	.style-card {
+		width: min(100%, clamp(310px, 13.819rem + 23.7vw, 470px));
+		grid-column: auto;
+		grid-row: auto;
+	}
+}
+
+@media (width <= 992px) {
+	/* min-width 375px, max-width 992px */
+	.styles__title {
+		font-size: clamp(26px, 0.789rem + 3.57vw, 48px);
+		padding-top: clamp(40px, 1.36rem + 4.86vw, 70px);
+		padding-bottom: clamp(28px, 0.382rem + 5.83vw, 64px);
+	}
+}
+
+@media (width <= 576px) {
+	.style-card {
+		position: relative;
+		overflow: hidden;
+	}
+
+	.style-card::before {
+		content: "";
+		position: absolute;
+		inset: 0;
+		background-image: inherit;
+		background-size: cover;
+		background-position: center;
+		-webkit-filter: blur(4px);
+		filter: blur(4px);
+		-webkit-transform: scale(1.05);
+		-ms-transform: scale(1.05);
+		transform: scale(1.05);
+		z-index: var(--layer-0);
+	}
+
+	.style-card__title {
+		position: relative;
+		z-index: var(--layer-1);
+	}
+}

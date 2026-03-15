@@ -1,0 +1,38 @@
+:root {
+	/* font-family */
+	--font-family: "Satoshi", sans-serif;
+	--second-family: "IntegralCF-Heavy", sans-serif;
+	--third-family: "IntegralCF", sans-serif;
+	--font3: "Inter", sans-serif;
+
+	/* container */
+	--container-width: 1240px;
+	--container-padding: 16px;
+
+	/* colors */
+	--main-color: #000;
+	--second-color: #00000099;
+	--third-color: #00000066;
+	--fourth-color: #fff;
+	--bg-color: #f0f0f0;
+
+	/* hover */
+	--opacity-time: 0.8;
+	--transform-offset-1: translateY(-2px);
+	--transform-offset-2: translateY(-5px);
+	--transform-offset-3: translateX(-5px);
+	--transform-offset-4: translateX(5px);
+
+	/* shadows */
+	--box-shadow: 0 10px 25px #00000026;
+
+	/* transitions */
+	--transition-time: 0.3s;
+
+	/* layers */
+	--layer-negative: -1;
+	--layer-0: 0;
+	--layer-1: 1;
+	--layer-2: 2;
+	--layer-3: 3;
+}

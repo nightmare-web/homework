@@ -1,0 +1,21 @@
+/* base */
+@import "./base/normalize.css";
+@import "./base/fonts.css";
+@import "./base/vars.css";
+@import "./base/globals.css";
+
+/* blocks */
+@import "./blocks/promo-banner.css";
+@import "./blocks/header.css";
+@import "./blocks/burger.css";
+@import "./blocks/hero.css";
+@import "./blocks/brands.css";
+@import "./blocks/general-style-arrivals-product.css";
+@import "./blocks/new-arrivals.css";
+@import "./blocks/top-products.css";
+@import "./blocks/styles.css";
+@import "./blocks/reviews.css";
+@import "./blocks/newsletter.css";
+@import "./blocks/footer.css";
+@import "./blocks/modal.css";
+@import "./blocks/modal-register.css";

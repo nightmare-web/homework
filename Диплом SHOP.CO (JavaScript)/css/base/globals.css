@@ -1,0 +1,43 @@
+.page {
+	font-family: var(--font-family);
+	font-weight: 400;
+	scroll-behavior: smooth;
+}
+
+.page__body {
+	min-width: 390px;
+}
+
+.container {
+	width: min(var(--container-width), 100% - var(--container-padding) * 2);
+	margin-inline: auto;
+}
+
+img {
+	object-fit: cover;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus {
+	outline: 1px solid var(--main-color);
+	outline-offset: 1px;
+}
+
+.text-medium {
+	font-weight: 500;
+}
+
+.text-bold {
+	font-weight: 700;
+	color: var(--main-color);
+}
+
+.text-extra-bold {
+	font-weight: 800;
+}
+
+.text-black {
+	font-weight: 900;
+	color: var(--main-color);
+}
